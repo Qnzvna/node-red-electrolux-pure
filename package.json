@@ -1,0 +1,10 @@
+{
+  "name": "node-red-contrib-electrolux-pure-a9",
+  "version": "1.0.0",
+  "dependencies": {
+  },
+  "node-red" : {
+    "nodes": {
+    }
+  }
+}
