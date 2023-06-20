@@ -1,0 +1,43 @@
+<script type="text/javascript">
+    RED.nodes.registerType('electrolux-pure-a9', {
+        category: 'function',
+        color: '#a6bbcf',
+        defaults: {
+            name: {value: "Electrolux Pure A9"},
+            appliance: {value: ""}
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "hash.png",
+        credentials: {
+            username: {type: "text"},
+            password: {type: "password"}
+        },
+        label: function () {
+            return this.name;
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="electrolux-pure-a9">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-username"><i class="fa fa-tag"></i> Username</label>
+        <input type="text" id="node-input-username">
+    </div>
+    <div class="form-row">
+        <label for="node-input-password"><i class="fa fa-tag"></i> Password</label>
+        <input type="password" id="node-input-password">
+    </div>
+    <div class="form-row">
+        <label for="node-input-appliance"><i class="fa fa-tag"></i> Appliance id</label>
+        <input type="text" id="node-input-appliance">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="electrolux-pure-a9">
+    <p>Electrolux Pure A9</p>
+</script>
